@@ -15,8 +15,8 @@ export const FALLBACK_SESSIONS: readonly Session[] = [
   session("sudori-game-overlay", "나만의 고성능 게임 오버레이 만들기", "스도리", "2026-06-20T06:40:00.000Z", "2026-06-20T07:00:00.000Z", "talk", 60, true),
   session("hong-minhee-gukhanmun", "Gukhanmun: 國漢文을 한글로 바꾸기", "홍민희", "2026-06-20T07:10:00.000Z", "2026-06-20T07:30:00.000Z", "talk", 70, true),
   session("lightning-margin", "라이트닝 토크", null, "2026-06-20T07:30:00.000Z", "2026-06-20T08:00:00.000Z", "break", 80, false),
-  session("networking", "피자를 먹으며 네트워킹", null, "2026-06-20T08:00:00.000Z", "2026-06-20T10:00:00.000Z", "networking", 90, false),
-  session("closing", "마무리 및 기념 촬영", null, "2026-06-20T10:00:00.000Z", "2026-06-20T10:10:00.000Z", "closing", 100, false),
+  session("closing", "기념 촬영", null, "2026-06-20T08:00:00.000Z", "2026-06-20T08:05:00.000Z", "closing", 90, false),
+  session("networking", "피자를 먹으며 네트워킹", null, "2026-06-20T08:05:00.000Z", "2026-06-20T10:00:00.000Z", "networking", 100, false),
 ]
 
 function session(

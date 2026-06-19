@@ -115,8 +115,8 @@ values
   ('sudori-game-overlay', '나만의 고성능 게임 오버레이 만들기', '스도리', '2026-06-20 15:40:00+09', '2026-06-20 16:00:00+09', 'talk', 60, true),
   ('hong-minhee-gukhanmun', 'Gukhanmun: 國漢文을 한글로 바꾸기', '홍민희', '2026-06-20 16:10:00+09', '2026-06-20 16:30:00+09', 'talk', 70, true),
   ('lightning-margin', '라이트닝 토크', null, '2026-06-20 16:30:00+09', '2026-06-20 17:00:00+09', 'break', 80, false),
-  ('networking', '피자를 먹으며 네트워킹', null, '2026-06-20 17:00:00+09', '2026-06-20 19:00:00+09', 'networking', 90, false),
-  ('closing', '마무리 및 기념 촬영', null, '2026-06-20 19:00:00+09', '2026-06-20 19:10:00+09', 'closing', 100, false);
+  ('closing', '기념 촬영', null, '2026-06-20 17:00:00+09', '2026-06-20 17:05:00+09', 'closing', 90, false),
+  ('networking', '피자를 먹으며 네트워킹', null, '2026-06-20 17:05:00+09', '2026-06-20 19:00:00+09', 'networking', 100, false);
 
 insert into public.bazocon_event_state (id, current_session_id, notice)
 values (true, null, null)
