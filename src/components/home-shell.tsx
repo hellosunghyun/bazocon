@@ -58,6 +58,24 @@ export function HomeShell({ initialSnapshot }: { readonly initialSnapshot: AppSn
             transition={{ duration: 0.22, ease: "easeOut" }}
             className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm"
           >
+            <p className="text-sm font-semibold text-cyan-700">행사 안내</p>
+            <h1 className="mt-3 text-3xl font-bold tracking-normal sm:text-4xl">
+              BAZOCON
+            </h1>
+            <div className="mt-5 grid gap-3 text-sm text-zinc-700">
+              <p className="flex gap-2">
+                <CalendarDays className="mt-0.5 h-4 w-4 text-cyan-700" />
+                2026년 6월 20일 토요일 14:00
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.22, delay: 0.04, ease: "easeOut" }}
+            className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm"
+          >
             <div className="flex items-center gap-2">
               <Users className="h-5 w-5 text-cyan-700" />
               <h2 className="text-lg font-bold">안내</h2>
@@ -70,24 +88,6 @@ export function HomeShell({ initialSnapshot }: { readonly initialSnapshot: AppSn
                 예정입니다. 시간이 부족할 경우 일부 질문은 다루지 못할 수 있습니다.
               </li>
             </ul>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.22, delay: 0.04, ease: "easeOut" }}
-            className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm"
-          >
-            <p className="text-sm font-semibold text-cyan-700">행사 안내</p>
-            <h1 className="mt-3 text-3xl font-bold tracking-normal sm:text-4xl">
-              BAZOCON
-            </h1>
-            <div className="mt-5 grid gap-3 text-sm text-zinc-700">
-              <p className="flex gap-2">
-                <CalendarDays className="mt-0.5 h-4 w-4 text-cyan-700" />
-                2026년 6월 20일 토요일 14:00
-              </p>
-            </div>
           </motion.div>
 
           <motion.div
