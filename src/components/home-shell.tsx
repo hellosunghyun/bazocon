@@ -58,6 +58,26 @@ export function HomeShell({ initialSnapshot }: { readonly initialSnapshot: AppSn
             transition={{ duration: 0.22, ease: "easeOut" }}
             className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm"
           >
+            <div className="flex items-center gap-2">
+              <Users className="h-5 w-5 text-cyan-700" />
+              <h2 className="text-lg font-bold">안내</h2>
+            </div>
+            <ul className="mt-4 space-y-3 text-sm text-zinc-700">
+              <li>네트워킹 시작 전 30초 자기소개 시간이 있습니다.</li>
+              <li>각 발표에 대한 질문은 아래 질문방에 남겨주세요. 추천 수는 실시간으로 반영됩니다.</li>
+              <li>
+                정해진 시간표 안에서 진행하기 위해 추천 수와 질문 내용을 참고해 답변할 질문을 선별할
+                예정입니다. 시간이 부족할 경우 일부 질문은 다루지 못할 수 있습니다.
+              </li>
+            </ul>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.22, delay: 0.04, ease: "easeOut" }}
+            className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm"
+          >
             <p className="text-sm font-semibold text-cyan-700">행사 안내</p>
             <h1 className="mt-3 text-3xl font-bold tracking-normal sm:text-4xl">
               BAZOCON
@@ -73,7 +93,7 @@ export function HomeShell({ initialSnapshot }: { readonly initialSnapshot: AppSn
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.22, delay: 0.04, ease: "easeOut" }}
+            transition={{ duration: 0.22, delay: 0.08, ease: "easeOut" }}
             className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm"
           >
             <div className="flex items-center gap-2">
@@ -101,7 +121,7 @@ export function HomeShell({ initialSnapshot }: { readonly initialSnapshot: AppSn
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.22, delay: 0.08, ease: "easeOut" }}
+            transition={{ duration: 0.22, delay: 0.12, ease: "easeOut" }}
             className="rounded-lg border border-zinc-200 bg-zinc-950 p-5 text-white shadow-sm"
           >
             <p className="text-sm font-semibold text-cyan-300">현재 질문 받는 중</p>
@@ -118,26 +138,6 @@ export function HomeShell({ initialSnapshot }: { readonly initialSnapshot: AppSn
                 현재 질문방 열기
               </Link>
             ) : null}
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.22, delay: 0.12, ease: "easeOut" }}
-            className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm"
-          >
-            <div className="flex items-center gap-2">
-              <Users className="h-5 w-5 text-cyan-700" />
-              <h2 className="text-lg font-bold">안내</h2>
-            </div>
-            <ul className="mt-4 space-y-3 text-sm text-zinc-700">
-              <li>네트워킹 시작 전 30초 자기소개 시간이 있습니다.</li>
-              <li>각 발표에 대한 질문은 아래 질문방에 남겨주세요. 추천 수는 실시간으로 반영됩니다.</li>
-              <li>
-                정해진 시간표 안에서 진행하기 위해 추천 수와 질문 내용을 참고해 답변할 질문을 선별할
-                예정입니다. 시간이 부족할 경우 일부 질문은 다루지 못할 수 있습니다.
-              </li>
-            </ul>
           </motion.div>
 
           <motion.div
