@@ -6,7 +6,7 @@ import type { SessionSnapshot } from "@/lib/types"
 export function SessionNotice({ currentSession }: { readonly currentSession: SessionSnapshot["session"] | null }) {
   if (currentSession === null) {
     return (
-      <div className="fixed inset-x-0 bottom-0 z-20 border-t border-cyan-200 bg-cyan-50 px-5 py-4 text-sm font-semibold text-cyan-950 shadow-lg">
+      <div className="app-bottom-notice fixed inset-x-0 bottom-0 z-20 border-t border-cyan-200 bg-cyan-50 px-5 pt-4 text-sm font-semibold text-cyan-950 shadow-lg">
         <div className="mx-auto max-w-5xl">현재 질문 받는 방이 설정되지 않았습니다. 질문은 남길 수 있습니다.</div>
       </div>
     )
@@ -17,7 +17,7 @@ export function SessionNotice({ currentSession }: { readonly currentSession: Ses
       initial={{ opacity: 0, y: 18 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.22, ease: "easeOut" }}
-      className="fixed inset-x-0 bottom-0 z-20 border-t-2 border-cyan-400 bg-white px-5 py-4 text-cyan-950 shadow-[0_-10px_30px_rgba(14,116,144,0.18)]"
+      className="app-bottom-notice fixed inset-x-0 bottom-0 z-20 border-t-2 border-cyan-400 bg-white px-5 pt-4 text-cyan-950 shadow-[0_-10px_30px_rgba(14,116,144,0.18)]"
     >
       <div className="mx-auto flex max-w-5xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>

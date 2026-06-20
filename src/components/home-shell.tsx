@@ -45,7 +45,7 @@ export function HomeShell({ initialSnapshot }: { readonly initialSnapshot: AppSn
   }, [refresh])
 
   return (
-    <main className="min-h-dvh bg-[#f5f7f8] text-zinc-950">
+    <main className="app-page bg-[#f5f7f8] text-zinc-950">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
         <BazoconLogo />
         <ConnectionBadge configured={snapshot.isSupabaseConfigured} />

@@ -170,7 +170,7 @@ export function AdminDashboard({
   }
 
   return (
-    <main className="min-h-dvh bg-[#f5f7f8] text-zinc-950">
+    <main className="app-page bg-[#f5f7f8] text-zinc-950">
       <header className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5">
         <BazoconLogo />
         <ConnectionBadge configured={initialApp.isSupabaseConfigured} />

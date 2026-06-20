@@ -56,7 +56,7 @@ export function ScreenBoard({
   const answeredQuestions = snapshot.questions.filter((question) => question.status === "answered")
 
   return (
-    <main className="min-h-dvh bg-[#f5f7f8] p-8 text-zinc-950">
+    <main className="app-page bg-[#f5f7f8] p-8 text-zinc-950">
       <motion.header
         initial={{ opacity: 0, y: -8 }}
         animate={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ export function ScreenBoard({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.26, ease: "easeOut" }}
-            className="grid min-h-[70dvh] place-items-center text-center"
+            className="grid min-h-[70svh] place-items-center text-center"
           >
             <h1 className="text-5xl font-bold">현재 띄울 발표가 없습니다.</h1>
           </motion.section>
@@ -84,7 +84,7 @@ export function ScreenBoard({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="mt-8 flex min-h-[calc(100dvh-9rem)] flex-col gap-8"
+            className="mt-8 flex min-h-[calc(100svh-9rem)] flex-col gap-8"
           >
             <motion.div layout className="min-w-0 border-b border-zinc-200 pb-6">
               <p className="text-sm font-black text-cyan-700">현재 질문 받는 중</p>

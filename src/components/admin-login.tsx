@@ -23,7 +23,7 @@ export function AdminLogin() {
   }
 
   return (
-    <main className="grid min-h-dvh place-items-center bg-[#eef2f3] px-5 text-zinc-950">
+    <main className="app-page grid place-items-center bg-[#eef2f3] px-5 text-zinc-950">
       <section className="w-full max-w-sm rounded-lg border border-zinc-300 bg-white p-5 shadow-md">
         <h1 className="text-xl font-black text-zinc-950">BAZOCON 관리자</h1>
         <input

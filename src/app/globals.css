@@ -19,10 +19,18 @@
   }
 }
 
+html {
+  min-height: 100%;
+  background: #f5f7f8;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
 }
 
 button,
@@ -95,4 +103,28 @@ select {
   justify-content: center;
   border-radius: 0.375rem;
   background: #f4f4f5;
+}
+
+.app-page {
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+}
+
+.app-safe-bottom {
+  padding-bottom: calc(2.5rem + env(safe-area-inset-bottom));
+}
+
+.app-safe-bottom-with-notice {
+  padding-bottom: calc(14rem + env(safe-area-inset-bottom));
+}
+
+.app-bottom-notice {
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+}
+
+@media (min-width: 40rem) {
+  .app-safe-bottom-with-notice {
+    padding-bottom: calc(11rem + env(safe-area-inset-bottom));
+  }
 }

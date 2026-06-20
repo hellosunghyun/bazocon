@@ -123,7 +123,7 @@ export function SessionRoom({ initialSnapshot }: { readonly initialSnapshot: Ses
   }
 
   return (
-    <main className={`min-h-dvh bg-[#f5f7f8] text-zinc-950 ${isCurrent ? "pb-10" : "pb-56 sm:pb-44"}`}>
+    <main className={`app-page bg-[#f5f7f8] text-zinc-950 ${isCurrent ? "app-safe-bottom" : "app-safe-bottom-with-notice"}`}>
       <header className="mx-auto flex max-w-5xl items-center justify-between px-5 py-5">
         <Link href="/" className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-600">
           <ArrowLeft className="h-4 w-4" />
